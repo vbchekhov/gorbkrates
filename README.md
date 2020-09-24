@@ -5,7 +5,7 @@ Simple library for read exchange rates rbc.ru on Go.
 ## Examples
 
 Rate now:
-```
+```golang
 rate, err := gorbkrates.Now("840") // check code number by ISO 4217
 if err != nil { ... }
 
@@ -13,7 +13,7 @@ if err != nil { ... }
 ```
 
 Rate on date:
-```
+```golang
 date, err := time.Parse("2006/01/02", "2020/09/23")
 if err != nil { ... }
 
@@ -24,7 +24,7 @@ if err != nil { ... }
 ```
 
 Rate for period:
-```
+```golang
 start, err := time.Parse("2006/01/02", "2020/09/23")
 if err != nil { ... }
 end, err := time.Parse("2006/01/02", "2020/09/23")
